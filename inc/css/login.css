@@ -1,0 +1,35 @@
+
+
+
+
+ .card-header {
+    background-color: #e4831f;
+    color: white;
+    border: 2px solid #e4831f;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #13b37821;
+    background-clip: border-box;
+    border: 1px solid rgb(228 131 31);
+    border-radius: .25rem;
+}
+
+p,label{
+    font-family: 'ubuntu', sans-serif;
+    letter-spacing: 1px;
+}
+
+::placeholder{
+ font-family: 'Raleway', sans-serif;
+
+}
+
+
