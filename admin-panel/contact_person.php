@@ -46,6 +46,8 @@ $con = OpenCon(); ?>
                 <a href="news_table_list.php" class="">News & Updates</a>
                 <a href="donation_list.php" class="">Donation </a>
                 <a href="contact_person.php" class="active">Contact Persons </a>
+                
+                <a href="question_upload.php" class="">Prev Question</a>
             </div>
         </div>
 
@@ -81,6 +83,8 @@ $con = OpenCon(); ?>
                         <a href="news_table_list.php" class="">News & Updates</a>
                         <a href="donation_list.php" class="">Donation </a>
                         <a href="contact_person.php" class="active">Contact Persons </a>
+                        
+        <a href="question_upload.php" class="">Prev Question</a>
                     </div>
                 </div>
             </div>

@@ -146,11 +146,6 @@ item:focus, .dropdown-item:hover {
       <li class="nav-item ml-lg-3">
         <a class="nav-link " href="founder.php">Founder</a>
       </li>
-
-      <li class="nav-item ml-lg-3">
-        <a class="nav-link " href="department.php">Department</a>
-      </li>
-
       <li class="nav-item ml-lg-3">
         <a class="nav-link " href="gallery.php">Gallery</a>
       </li>
@@ -199,6 +194,9 @@ item:focus, .dropdown-item:hover {
 
       <li class="nav-item ml-lg-3">
         <a class="nav-link " href="result.php">Result</a>
+      </li>
+      <li class="nav-item ml-lg-3">
+        <a class="nav-link " href="prev_question.php">Prev. Question Paper</a>
       </li>
     </ul>
   </div>
