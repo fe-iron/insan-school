@@ -2,7 +2,9 @@
 session_start();
 
 include 'connection.php';
-$con = OpenCon(); ?>
+$con = OpenCon(); 
+
+?>
 <link rel="stylesheet" type="text/css" href="inc/css/style.css">
 
 <body>

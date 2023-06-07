@@ -6,7 +6,7 @@ session_start();
 
 if (!isset($_SESSION['sl'])) {
             
-            header("location:login.php");
+            // header("location:login.php");
 }
 
 

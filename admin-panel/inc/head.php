@@ -4,7 +4,7 @@
 <html>
 <head>
     <title></title>
-    <title>WMK-HOME</title>
+    <title>INSAN SCHOOL</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->

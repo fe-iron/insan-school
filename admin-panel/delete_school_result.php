@@ -1,12 +1,11 @@
- <?php 
+ <?php
 
+    include 'connection.php';
+    $con = OpenCon();
 
+    $id = $_GET['id'];
 
- $con = mysqli_connect('localhost','root','','insan-school');
-
- $id=$_GET['id'];
-
-$query = " DELETE FROM `school_result` WHERE sl=$id ";
+    $query = " DELETE FROM `school_result` WHERE sl=$id ";
 
     mysqli_query($con, $query);
 
@@ -15,4 +14,4 @@ $query = " DELETE FROM `school_result` WHERE sl=$id ";
 
 
 
- ?>
+    ?>

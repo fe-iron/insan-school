@@ -1,14 +1,14 @@
-<?php include_once'inc/head.php'; ?>
+<?php include_once'inc/head.php'; 
+
+include 'connection.php';
+$con = OpenCon();
+$query = "SELECT * FROM `school_result`";
+$run = mysqli_query($con, $query);
+
+?>
 <link rel="stylesheet" type="text/css" href="inc/css/style.css">
 
 <body>
-
-
-
-
-
-
-
 
 
   <section>
@@ -36,9 +36,6 @@
    </div>
 
    <!-- large-screen-sidebar-ends -->
-
-
-
 
 
    <!-- small-screen-sidebar starts -->
@@ -106,10 +103,6 @@
                 </thead>
                 <tbody> 
                   <?php
-
-                  $con = mysqli_connect('localhost','root','','insan-school');
-                  $query = "SELECT * FROM `school_result`";
-                  $run = mysqli_query($con, $query);
 
                   while($data = mysqli_fetch_assoc($run))
                   {
