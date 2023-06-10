@@ -7,17 +7,21 @@
   include 'connection.php';
   $con = OpenCon();
 
-  // $con = mysqli_connect('localhost', 'root', '', 'insan-school');
-
   if (isset($_POST['submit'])) {
     $class = $_POST['class'];
     $year = $_POST['year'];
     $result = $_FILES['result']['name'];
     $tempresult = $_FILES['result']['tmp_name'];
-    move_uploaded_file($tempresult, "../result_file/$result");
-    $query = "INSERT INTO `school_result`(`class`, `result`, `year`) VALUES ('$class','$result','$year')";
+    move_uploaded_file($tempresult, "../prev_questions/$result");
+    $query = "INSERT INTO `prev_questions`(`class`, `result`, `year`) VALUES ('$class','$result','$year')";
 
     $run = mysqli_query($con, $query);
+    if ($run === TRUE) {
+      $_SESSION['msg'] = "Successfully Inserted in Database!";
+    } else {
+      echo $run;
+      $_SESSION['error'] = "OOPS, Data not inserted! Try again";
+    }
   }
 
 
@@ -87,7 +91,6 @@
             <a href="news_update.php" class="list ">News & Updates</a>
             <a href="donation_list.php" class="">Donation </a>
             <a href="contact_person.php" class="">Contact Persons </a>
-
             <a href="question_upload.php" class="active">Prev Question</a>
           </div>
         </div>
@@ -114,7 +117,19 @@
 
               <div class="card-body ">
                 <div class="col-md-12">
-                  <!--  -->
+                  <h4 class="mx-4 text-success"><?php
+                                                if (isset($_SESSION['msg'])) {
+                                                  echo $_SESSION['msg'];
+                                                  unset($_SESSION['msg']);
+                                                }
+                                                ?>
+                  </h4>
+                  <h4 class="mx-4 text-danger"><?php
+                                                if (isset($_SESSION['error'])) {
+                                                  echo $_SESSION['error'];
+                                                  unset($_SESSION['error']);
+                                                }
+                                                ?></h4>
                 </div>
 
                 <form enctype="multipart/form-data" method="post">
@@ -124,16 +139,16 @@
                         <label for="exampleFormControlSelect1">Select Class*</label>
                         <select class="form-control" id="exampleFormControlSelect1" name="class">
                           <option selected="">Select Class</option>
-                          <option value="1 Class">1 Class</option>
-                          <option value="2 Class">2 Class</option>
-                          <option value="3 Class">3 Class</option>
-                          <option value="4 Class">4 Class</option>
-                          <option value="5 Class">5 Class</option>
-                          <option value="6 Class">6 Class</option>
-                          <option value="7 Class">7 Class</option>
-                          <option value="8 Class">8 Class</option>
-                          <option value="9 Class">9 Class</option>
-                          <option value="10 Class">10 Class</option>
+                          <option value="1">1 Class</option>
+                          <option value="2">2 Class</option>
+                          <option value="3">3 Class</option>
+                          <option value="4">4 Class</option>
+                          <option value="5">5 Class</option>
+                          <option value="6">6 Class</option>
+                          <option value="7">7 Class</option>
+                          <option value="8">8 Class</option>
+                          <option value="9">9 Class</option>
+                          <option value="10">10 Class</option>
                         </select>
                       </div>
                     </div>

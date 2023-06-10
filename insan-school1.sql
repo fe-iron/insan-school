@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 04, 2023 at 09:40 AM
+-- Generation Time: Jun 10, 2023 at 06:23 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -162,6 +162,19 @@ INSERT INTO `news_update` (`sl`, `news`, `news_date`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `prev_questions`
+--
+
+CREATE TABLE `prev_questions` (
+  `sl` int(11) NOT NULL,
+  `class` int(11) NOT NULL,
+  `result` varchar(255) NOT NULL,
+  `year` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `school_admission_form`
 --
 
@@ -228,7 +241,8 @@ CREATE TABLE `school_result` (
 INSERT INTO `school_result` (`sl`, `class`, `result`, `year`) VALUES
 (8, 7, 'script technology-task.pdf', '2021-08-11'),
 (9, 10, 'demo.pdf', '2021-08-11'),
-(10, 8, 'file (7).pdf', '2021-08-24');
+(10, 8, 'file (7).pdf', '2021-08-24'),
+(11, 3, 'download.jpeg', '2023-06-07');
 
 -- --------------------------------------------------------
 
@@ -314,6 +328,12 @@ ALTER TABLE `news_update`
   ADD PRIMARY KEY (`sl`);
 
 --
+-- Indexes for table `prev_questions`
+--
+ALTER TABLE `prev_questions`
+  ADD PRIMARY KEY (`sl`);
+
+--
 -- Indexes for table `school_admission_form`
 --
 ALTER TABLE `school_admission_form`
@@ -378,6 +398,12 @@ ALTER TABLE `news_update`
   MODIFY `sl` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
+-- AUTO_INCREMENT for table `prev_questions`
+--
+ALTER TABLE `prev_questions`
+  MODIFY `sl` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `school_admission_form`
 --
 ALTER TABLE `school_admission_form`
@@ -387,7 +413,7 @@ ALTER TABLE `school_admission_form`
 -- AUTO_INCREMENT for table `school_result`
 --
 ALTER TABLE `school_result`
-  MODIFY `sl` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `sl` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `school_teachers`

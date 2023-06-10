@@ -78,7 +78,7 @@
                     <div class="col-md-7">
                         <div class="card my-5 shadow">
                             <nav class="navbar navbar-light  venue-registration border-bottom">
-                                <a class="h4 text-dark font-weight-bold pt-2">Result Upload </a>
+                                <a class="h4 text-dark font-weight-bold pt-2">Previous Year Questions Upload </a>
 
                             </nav>
 

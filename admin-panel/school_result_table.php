@@ -22,15 +22,15 @@ $run = mysqli_query($con, $query);
         </h3>
       </div>
       <div class="" id="sidebar-here">
-       <a href="index.php" class="list ">Admission Form List</a>
-       <a href="admission_fee.php" class="">Admission Fee</a>
-       <a href="contact_list.php" class="list">Contact us</a>
-       <a href="gallery_list.php" class=" ">Gallery</a>
-       <a href="alumini_list.php" class="list">Alumini List</a>
-       <a href="result_upload.php" class="list active">Result Upload</a>
-       <a href="news_table_list.php" class="">News & Updates</a>
-       <a href="donation_list.php" class="">Donation </a>
-       
+      <a href="index.php" class="list ">Admission Form List</a>
+        <a href="admission_fee.php" class="">Admission Fee</a>
+        <a href="contact_list.php" class="list">Contact us</a>
+        <a href="gallery_list.php" class="">Gallery</a>
+        <a href="alumini_list.php" class="list">Alumini List</a>
+        <a href="result_upload.php" class="list active">Result Upload</a>
+        <a href="news_table_list.php" class="">News & Updates</a>
+        <a href="donation_list.php" class="">Donation </a>
+
         <a href="question_upload.php" class="">Prev Question</a>
      </div>
    </div>
@@ -55,16 +55,16 @@ $run = mysqli_query($con, $query);
     </div>
     <div class="pt-0" id="sidebar-here">
       <div class="pt-3" id="sidebar-here">
-       <a href="index.php" class="list ">Admission Form List</a>
-       <a href="admission_fee.php" class="">Admission Fee</a>
-       <a href="contact_list.php" class="list">Contact us</a>
-       <a href="gallery_list.php" class="">Gallery</a>
-       <a href="alumini_list.php" class="list">Alumini List</a>
-       <a href="result_upload.php" class="list active">Result Upload</a>
-       <a href="news_table_list.php" class="">News & Updates</a>
-       <a href="donation_list.php" class="">Donation </a>
-       
-        <a href="question_upload.php" class="">Prev Question Upload</a>
+        <a href="index.php" class="list ">Admission Form List</a>
+        <a href="admission_fee.php" class="">Admission Fee</a>
+        <a href="contact_list.php" class="list">Contact us</a>
+        <a href="gallery_list.php" class=" ">Gallery</a>
+        <a href="alumini_list.php" class="list">Alumini List</a>
+        <a href="result_upload.php" class="list active">Result Upload</a>
+        <a href="news_table_list.php" class="">News & Updates</a>
+        <a href="donation_list.php" class="">Donation </a>
+
+        <a href="question_upload.php" class="">Prev Question</a>
      </div>
    </div>
  </div>

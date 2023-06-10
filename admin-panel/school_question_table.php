@@ -1,9 +1,9 @@
 <?php include_once 'inc/head.php';
-
+session_start();
 include 'connection.php';
 $con = OpenCon();
 
-$query = "SELECT * FROM `school_result`";
+$query = "SELECT * FROM `prev_questions`";
 $run = mysqli_query($con, $query);
 
 ?>
@@ -82,7 +82,7 @@ $run = mysqli_query($con, $query);
               <nav class="navbar navbar-light  venue-registration border-bottom">
                 <a class="h4 text-dark font-weight-bold pt-2">News And Updates </a>
                 <form class="form-inline">
-                  <a href="result_school.php" class="btn btn-primary">Upload Result</a>
+                  <a href="question_school.php" class="btn btn-primary">Upload Result</a>
                 </form>
               </nav>
 
@@ -91,7 +91,7 @@ $run = mysqli_query($con, $query);
                   <table class="table table-bordered">
                     <thead class="border">
                       <tr>
-                        <th scope="col" class="border-right">SL No.</th>
+                        <th scope="col" class="border-right">Sl No.</th>
                         <th scope="col" class="border-right">Result</th>
                         <th scope="col" class="border-right">Date</th>
                         <th scope="col" class="border-right text-center">Opreation<!-- <a href="" class="btn btn-primary">Edit/Update</a> --></th>
@@ -104,11 +104,11 @@ $run = mysqli_query($con, $query);
                       ?>
                         <tr class="border-bottom">
                           <td class="border-right border-left"> <?php echo $data['sl']; ?> </td>
-                          <td class="border-right"> <a href="../result_file/<?php echo $data['result']; ?>" download style="text-decoration: none; font-size: 15px; color: black"><?php echo $data['class']; ?> Class Result <span class="text-danger">(Click To Download)</span></a></td>
+                          <td class="border-right"> <a href="../prev_questions/<?php echo $data['result']; ?>" download style="text-decoration: none; font-size: 15px; color: black"><?php echo $data['class']; ?> Class Result <span class="text-danger">(Click To Download)</span></a></td>
                           <td class="border-right"> <?php echo $data['year']; ?> </td>
                           <td class="border-right text-center">
                             <div class="btn-group" role="group" aria-label="Basic example">
-                              <a href="delete_school_result.php?id=<?php echo $data['sl']; ?>" type="submit" class="btn btn-danger">
+                              <a href="delete_prev_questions.php?id=<?php echo $data['sl']; ?>" type="submit" class="btn btn-danger">
                                 Delete
                               </a>
                             </div>

@@ -2,7 +2,7 @@
 
 include 'admin-panel/connection.php';
 $con = OpenCon();
-$query = "SELECT * FROM `school_result`";
+$query = "SELECT * FROM `prev_questions`";
 $run = mysqli_query($con, $query);
 
 ?>
@@ -50,7 +50,7 @@ $run = mysqli_query($con, $query);
 
                                 while ($data = mysqli_fetch_assoc($run)) {
                                 ?> <li style="margin-top: 8px;">
-                    <a href="result_file/<?php echo $data['result']; ?>" download style="text-decoration: none; font-size: 15px; color: black"> <?php echo $data['class']; ?> Class Result <span class="text-success float-right">(Click To Download)</span>
+                    <a href="prev_questions/<?php echo $data['result']; ?>" download style="text-decoration: none; font-size: 15px; color: black"> <?php echo $data['class']; ?> Class Result <span class="text-success float-right">(Click To Download)</span>
                     </a>
                   </li> <?php
                                 }

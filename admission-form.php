@@ -40,7 +40,6 @@
 
 
   if (isset($_POST['submit'])) {
-
     $class = $_POST['class'];
     $tc_no = $_POST['tc'];
     $student_name = $_POST['Student_name'];
@@ -73,15 +72,6 @@
     $signature = $_FILES['signature']['name'];
     $signaturetemp = $_FILES['signature']['tmp_name'];
     move_uploaded_file($signaturetemp, "student-signature/$signature");
-
-
-
-
-    // $query="INSERT INTO `school_admission_form`( `class`, `admission_date`, `tc_no`, `student_name`, `fname`, `mname`, `address`, `mobile1`, `mobile2`, `dob`, `adhar`, `email`, `account`, `ifsc`, `bank`, `day_scholar`, `border`, `own`, `step`, `brother`, `sister`, `male`, `female`, `mothertongue`, `nationality`, `illness`, `meter`, `centimeter`, `suggestion`)  VALUES ('$class', '$admission_date','$tc_no', '$student_name','$fname', '$mname', '$address', '$Mobile1','$Mobile2','$dob','$adhar','$email','$account','$ifsc','$bank','$day_scholar','$border','$mother_own','$mother_step','$Siblings_brother','$Siblings_sister','$male','$female','$mothertongue','$nationality','$illness','$meter','$centimeter','suggestion')";
-
-
-
-
 
 
     $query = " INSERT INTO `school_admission_form`( `class`, `admission_date`, `tc_no`, `student_name`, `fname`, `mname`, `address`, `mobile1`, `mobile2`, `dob`, `adhar`, `email`, `account`, `ifsc`, `bank`, `brother`, `sister`, `mothertongue`, `nationality`, `illness`, `meter`, `centimeter`, `suggestion`, `photo`, `signature`, `mother`, `gender`, `student_type`) VALUES ('$class', '$admission_date','$tc_no', '$student_name','$fname','$mname','$address','$Mobile1','$Mobile2','$dob','$adhar','$email','$account','$ifsc','$bank','$Siblings_brother','$Siblings_sister','$mothertongue','$nationality','$illness','$meter','$centimeter','$suggestion','$imagesname','$signature','$mother','$gender','$student')";
