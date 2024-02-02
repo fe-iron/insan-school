@@ -76,12 +76,15 @@ $run = mysqli_query($con, $query);
             <div class="card my-5 shadow">
               <nav class="navbar navbar-light  venue-registration border-bottom">
                 <a class="h4 text-dark font-weight-bold pt-2">Admission List</a>
+                <div class="px-2">
+                <input class="form-control" id="myInput" type="text" placeholder="Search name here...">
+                </div>
               </nav>
               <div class="card-body">
                 <div class="row student">
                   <div class="col-md p-0">
                     <div class="table-responsive">
-                      <table class="table table-bordered">
+                      <table class="table table-bordered" id="myTable">
                         <thead class="border">
                           <tr>
                             <th scope="col" class="border-right">SL No.</th>
@@ -144,6 +147,19 @@ $run = mysqli_query($con, $query);
     }
     // Script for add more button ends here
   </script>
+
+
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 </body>
 
 </html>

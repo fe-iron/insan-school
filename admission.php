@@ -25,8 +25,8 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <h3 class="py-2 text-white font-weight-bold">Photo Gallery</h3>
-        <p class="text-white">A Camera that puts a world of possiblities at your fingertips.</p>
+        <h3 class="py-2 text-white font-weight-bold">Admission Form</h3>
+        <p class="text-white">Fill Admission Form To Register Yourself</p>
         <!--  <button  type="button" class="btn btn-success" >Apply Now</button> -->
         <a href="images/Admission-form/insan-school.pdf"><button  type="button" class="btn btn-success" >Apply Now</button></a>
 

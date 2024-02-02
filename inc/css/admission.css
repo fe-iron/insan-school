@@ -99,8 +99,8 @@ label{
     color: white;
 }
 .paddding-gallery {
-    background-image: linear-gradient(to right, #8388f1 , #8186f0);
-    padding: 60px 10px;
+    background-image: linear-gradient(to right, #cc6700 , #e4831f);
+    padding: 120px 10px;
 }
 
 .card li a {

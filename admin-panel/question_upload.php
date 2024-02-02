@@ -79,24 +79,17 @@
                         <div class="card my-5 shadow">
                             <nav class="navbar navbar-light  venue-registration border-bottom">
                                 <a class="h4 text-dark font-weight-bold pt-2">Previous Year Questions Upload </a>
-
                             </nav>
-
                             <div class="card-body ">
                                 <div class="col-md-12 text-center">
                                     <!--  -->
-
                                     <a href="question_school.php" class="btn btn-success mr-3">
-                                        Upload School Results
+                                        Upload School Questions
                                     </a>
-
                                     <a href="#" class="btn btn-success">
-                                        Upload College Results
+                                        Upload College Questions
                                     </a>
-
-
                                 </div>
-
                             </div>
                         </div>
                     </div>

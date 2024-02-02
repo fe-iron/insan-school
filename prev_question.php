@@ -43,14 +43,14 @@ $run = mysqli_query($con, $query);
         <div class="col-md-7">
           <div class="card">
             <div class="card-header">
-              <h5 class="mb-0">Insan School Results</h5>
+              <h5 class="mb-0">Previous Years Questions</h5>
             </div>
             <div class="card-body">
               <ul class="mx-5"> <?php
 
                                 while ($data = mysqli_fetch_assoc($run)) {
                                 ?> <li style="margin-top: 8px;">
-                    <a href="prev_questions/<?php echo $data['result']; ?>" download style="text-decoration: none; font-size: 15px; color: black"> <?php echo $data['class']; ?> Class Result <span class="text-success float-right">(Click To Download)</span>
+                    <a href="prev_questions/<?php echo $data['result']; ?>" download style="text-decoration: none; font-size: 15px; color: black"> <?php echo $data['class']; ?> Class Question (  <?php echo $data['year']; ?>  ) <span class="text-success float-right">(Click To Download)</span>
                     </a>
                   </li> <?php
                                 }
